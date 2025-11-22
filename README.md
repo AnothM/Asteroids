@@ -1,7 +1,43 @@
-To enable the virtual environment within ~/workspace/bootdev/asteroids_pygame/Asteroids
+Asteroids (Pygame)
+The repository contains all source code, assets, and configuration needed to run the game locally.
 
-source .venv/bin/activate
+Requirements
+Python 3.10+
+Pygame
+uv (recommended) or pip
 
-To Disable the virtual environment within  ~/workspace/bootdev/asteroids_pygame/Asteroids
+Installation
+1. Clone the repository
+  git clone https://github.com/AnothM/Asteroids.git
+  cd Asteroids
 
-deactivate
+2. Create a virtual environment
+Linux / macOS / WSL:
+  python3 -m venv .venv
+Windows:
+  python -m venv .venv
+
+3. Activate the virtual environment
+Linux / macOS / WSL:
+  source .venv/bin/activate
+Windows PowerShell:
+  .venv\Scripts\Activate.ps1
+Windows CMD:
+  .venv\Scripts\activate.bat
+
+5. Install dependencies
+Using uv (recommended):
+  uv sync
+
+If you dont have uv:
+pip install uv
+
+OR for manual installation (fallback):
+pip install pygame
+
+Running the Game
+Linux / macOS / WSL:
+python3 main.py
+
+Windows:
+python main.py
