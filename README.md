@@ -2,7 +2,7 @@
 Requirements
 Python 3.10+,
 Pygame,
-uv (recommended) or pip
+uv or pip
 
 Installation, Clone the repository:
   git clone https://github.com/AnothM/Asteroids.git
